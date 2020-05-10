@@ -10,3 +10,4 @@ RUN apk add --update linux-headers gcc g++ \
 
 COPY foo.asm asm.c /root/
 WORKDIR /root
+
