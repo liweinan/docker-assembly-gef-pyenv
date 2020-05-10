@@ -10,7 +10,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
 
-      - name: Docker Push
+      - name: Docker build & Push
         uses: opspresso/action-docker@v0.2.8
         with:
           args: --docker
@@ -31,7 +31,7 @@ jobs:
              {
                   "msgtype": "text",
                   "text": {
-                      "content": "【alchemy-studio-bot】Build docker-assembly-gef Successfully!"
+                      "content": "【alchemy-studio-bot】Build docker-assembly-gef Successfully!",
                       "mentioned_list":["@all"]
                   }
              }'
